@@ -17,6 +17,7 @@
 		0A22DC4E238C8FAD00D2E96F /* FitAppBixUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A22DC4D238C8FAD00D2E96F /* FitAppBixUITests.swift */; };
 		0A22DC5C238CA4D400D2E96F /* BodyFatMeasurementRobotProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A22DC5B238CA4D400D2E96F /* BodyFatMeasurementRobotProtocol.swift */; };
 		0A22DC5E238CA4E400D2E96F /* BodyFatMeasurementRobotExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A22DC5D238CA4E400D2E96F /* BodyFatMeasurementRobotExtension.swift */; };
+		0A22DC60238CAB9100D2E96F /* BodyFatMeasurementsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A22DC5F238CAB9100D2E96F /* BodyFatMeasurementsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		0A22DC4F238C8FAD00D2E96F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A22DC5B238CA4D400D2E96F /* BodyFatMeasurementRobotProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyFatMeasurementRobotProtocol.swift; sourceTree = "<group>"; };
 		0A22DC5D238CA4E400D2E96F /* BodyFatMeasurementRobotExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyFatMeasurementRobotExtension.swift; sourceTree = "<group>"; };
+		0A22DC5F238CAB9100D2E96F /* BodyFatMeasurementsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyFatMeasurementsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				0A22DC34238C8FAD00D2E96F /* Assets.xcassets */,
 				0A22DC36238C8FAD00D2E96F /* LaunchScreen.storyboard */,
 				0A22DC39238C8FAD00D2E96F /* Info.plist */,
+				0A22DC5F238CAB9100D2E96F /* BodyFatMeasurementsViewController.swift */,
 			);
 			path = FitAppBix;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				0A22DC30238C8FAC00D2E96F /* BaseViewController.swift in Sources */,
 				0A22DC2C238C8FAC00D2E96F /* AppDelegate.swift in Sources */,
 				0A22DC2E238C8FAC00D2E96F /* SceneDelegate.swift in Sources */,
+				0A22DC60238CAB9100D2E96F /* BodyFatMeasurementsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

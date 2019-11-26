@@ -17,6 +17,7 @@ extension BodyFatMeasurementRobot {
     
     func andITypeFollowingAge(age: Int) {
         let text = XCUIApplication().textFields["Age"]
+        text.tap()
         text.typeText(String(age))
     }
 }
