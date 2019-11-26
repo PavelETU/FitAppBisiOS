@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		0A22DC2C238C8FAC00D2E96F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A22DC2B238C8FAC00D2E96F /* AppDelegate.swift */; };
 		0A22DC2E238C8FAC00D2E96F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A22DC2D238C8FAC00D2E96F /* SceneDelegate.swift */; };
-		0A22DC30238C8FAC00D2E96F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A22DC2F238C8FAC00D2E96F /* ViewController.swift */; };
+		0A22DC30238C8FAC00D2E96F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A22DC2F238C8FAC00D2E96F /* BaseViewController.swift */; };
 		0A22DC33238C8FAC00D2E96F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A22DC31238C8FAC00D2E96F /* Main.storyboard */; };
 		0A22DC35238C8FAD00D2E96F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A22DC34238C8FAD00D2E96F /* Assets.xcassets */; };
 		0A22DC38238C8FAD00D2E96F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A22DC36238C8FAD00D2E96F /* LaunchScreen.storyboard */; };
 		0A22DC43238C8FAD00D2E96F /* FitAppBixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A22DC42238C8FAD00D2E96F /* FitAppBixTests.swift */; };
 		0A22DC4E238C8FAD00D2E96F /* FitAppBixUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A22DC4D238C8FAD00D2E96F /* FitAppBixUITests.swift */; };
+		0A22DC5C238CA4D400D2E96F /* BodyFatMeasurementRobotProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A22DC5B238CA4D400D2E96F /* BodyFatMeasurementRobotProtocol.swift */; };
+		0A22DC5E238CA4E400D2E96F /* BodyFatMeasurementRobotExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A22DC5D238CA4E400D2E96F /* BodyFatMeasurementRobotExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +40,7 @@
 		0A22DC28238C8FAC00D2E96F /* FitAppBix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitAppBix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A22DC2B238C8FAC00D2E96F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A22DC2D238C8FAC00D2E96F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0A22DC2F238C8FAC00D2E96F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0A22DC2F238C8FAC00D2E96F /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		0A22DC32238C8FAC00D2E96F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0A22DC34238C8FAD00D2E96F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A22DC37238C8FAD00D2E96F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		0A22DC49238C8FAD00D2E96F /* FitAppBixUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitAppBixUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A22DC4D238C8FAD00D2E96F /* FitAppBixUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FitAppBixUITests.swift; sourceTree = "<group>"; };
 		0A22DC4F238C8FAD00D2E96F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A22DC5B238CA4D400D2E96F /* BodyFatMeasurementRobotProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyFatMeasurementRobotProtocol.swift; sourceTree = "<group>"; };
+		0A22DC5D238CA4E400D2E96F /* BodyFatMeasurementRobotExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyFatMeasurementRobotExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +105,7 @@
 			children = (
 				0A22DC2B238C8FAC00D2E96F /* AppDelegate.swift */,
 				0A22DC2D238C8FAC00D2E96F /* SceneDelegate.swift */,
-				0A22DC2F238C8FAC00D2E96F /* ViewController.swift */,
+				0A22DC2F238C8FAC00D2E96F /* BaseViewController.swift */,
 				0A22DC31238C8FAC00D2E96F /* Main.storyboard */,
 				0A22DC34238C8FAD00D2E96F /* Assets.xcassets */,
 				0A22DC36238C8FAD00D2E96F /* LaunchScreen.storyboard */,
@@ -124,6 +128,8 @@
 			children = (
 				0A22DC4D238C8FAD00D2E96F /* FitAppBixUITests.swift */,
 				0A22DC4F238C8FAD00D2E96F /* Info.plist */,
+				0A22DC5B238CA4D400D2E96F /* BodyFatMeasurementRobotProtocol.swift */,
+				0A22DC5D238CA4E400D2E96F /* BodyFatMeasurementRobotExtension.swift */,
 			);
 			path = FitAppBixUITests;
 			sourceTree = "<group>";
@@ -259,7 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A22DC30238C8FAC00D2E96F /* ViewController.swift in Sources */,
+				0A22DC30238C8FAC00D2E96F /* BaseViewController.swift in Sources */,
 				0A22DC2C238C8FAC00D2E96F /* AppDelegate.swift in Sources */,
 				0A22DC2E238C8FAC00D2E96F /* SceneDelegate.swift in Sources */,
 			);
@@ -277,7 +283,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A22DC5E238CA4E400D2E96F /* BodyFatMeasurementRobotExtension.swift in Sources */,
 				0A22DC4E238C8FAD00D2E96F /* FitAppBixUITests.swift in Sources */,
+				0A22DC5C238CA4D400D2E96F /* BodyFatMeasurementRobotProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
