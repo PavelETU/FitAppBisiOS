@@ -14,4 +14,9 @@ extension BodyFatMeasurementRobot {
         XCUIApplication().launch()
         XCUIApplication().buttons["Go To Fat measurements"].tap()
     }
+    
+    func andITypeFollowingAge(age: Int) {
+        let text = XCUIApplication().textFields["Age"]
+        text.typeText(String(age))
+    }
 }

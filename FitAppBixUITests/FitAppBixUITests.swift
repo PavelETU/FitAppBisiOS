@@ -15,5 +15,6 @@ class FitAppBixUITests: XCTestCase, BodyFatMeasurementRobot {
 
     func testCase() {
         givenIAmOnBodyFatMeasurementScreen()
+        andITypeFollowingAge(age: 26)
     }
 }
