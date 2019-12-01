@@ -10,64 +10,79 @@
         <!--Base View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="Base View Controller" id="BYZ-38-t0r" customClass="BaseViewController" customModule="FitAppBix" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Main" title="Base View Controller" id="BYZ-38-t0r" customClass="BaseViewController" customModule="FitAppBix" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbl-rl-deb">
-                                <rect key="frame" x="122" y="433" width="171" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qbl-rl-deb">
+                                <rect key="frame" x="121.5" y="438" width="171" height="30"/>
                                 <state key="normal" title="Go To Fat measurements"/>
                                 <connections>
-                                    <segue destination="mgQ-7P-zcB" kind="show" id="3aG-Xa-fQ0"/>
+                                    <action selector="openBodyFatMeasurementsScreen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pzz-fY-epz"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="qbl-rl-deb" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="BuA-07-bj3"/>
+                            <constraint firstItem="qbl-rl-deb" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="jcg-Z1-Uab"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="mAz-ua-Jkv"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="138"/>
+            <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
         </scene>
         <!--Body fat percentage measurement-->
         <scene sceneID="hYk-ji-d0o">
             <objects>
-                <viewController title="Body fat percentage measurement" id="mgQ-7P-zcB" customClass="BodyFatMeasurementsViewController" customModule="FitAppBix" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BodyFatMeasurementsScreen" title="Body fat percentage measurement" useStoryboardIdentifierAsRestorationIdentifier="YES" id="mgQ-7P-zcB" customClass="BodyFatMeasurementsViewController" customModule="FitAppBix" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0D2-js-eTA">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ru6-fG-7SY">
-                                <rect key="frame" x="159" y="404" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
-                            </textField>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gBT-YS-Ety" userLabel="Male">
-                                <rect key="frame" x="183" y="49" width="49" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" identifier="Male" label="Male"/>
-                            </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Male" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fP-v9-YdF">
-                                <rect key="frame" x="132" y="54" width="37" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <accessibility key="accessibilityConfiguration" label="Male"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1vk-h2-99r">
+                                <rect key="frame" x="149" y="415.5" width="116" height="75"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="JsW-DJ-xRK">
+                                        <rect key="frame" x="0.0" y="0.0" width="116" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Male" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fP-v9-YdF">
+                                                <rect key="frame" x="0.0" y="0.0" width="37" height="31"/>
+                                                <accessibility key="accessibilityConfiguration" label="Male"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gBT-YS-Ety" userLabel="Male">
+                                                <rect key="frame" x="67" y="0.0" width="51" height="31"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="Male" label="Male"/>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ru6-fG-7SY">
+                                        <rect key="frame" x="0.0" y="41" width="116" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="1vk-h2-99r" firstAttribute="centerX" secondItem="Hw8-wA-cts" secondAttribute="centerX" id="IZQ-dz-HII"/>
+                            <constraint firstItem="1vk-h2-99r" firstAttribute="centerY" secondItem="Hw8-wA-cts" secondAttribute="centerY" id="ngU-iy-Ls2"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Hw8-wA-cts"/>
                     </view>
                     <navigationItem key="navigationItem" id="UYb-TI-DTc"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iOS-6l-AYs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="930" y="133"/>
+            <point key="canvasLocation" x="1839.1304347826087" y="132.58928571428572"/>
         </scene>
     </scenes>
 </document>

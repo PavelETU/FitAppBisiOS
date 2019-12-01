@@ -7,14 +7,16 @@
 //
 
 import UIKit
-
 class BaseViewController: UIViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func openBodyFatMeasurementsScreen(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "BodyFatMeasurementsScreen")
+        self.present(vc, animated: true, completion: nil)
+    }
+    
 }
 
