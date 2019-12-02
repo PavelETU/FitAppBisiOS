@@ -45,31 +45,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1vk-h2-99r">
-                                <rect key="frame" x="149" y="393.5" width="116" height="119"/>
+                                <rect key="frame" x="47" y="54" width="320" height="304"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="JsW-DJ-xRK">
-                                        <rect key="frame" x="0.0" y="0.0" width="116" height="31"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Male" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fP-v9-YdF">
-                                                <rect key="frame" x="0.0" y="0.0" width="37" height="31"/>
-                                                <accessibility key="accessibilityConfiguration" label="Male"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="gBT-YS-Ety" userLabel="Male">
-                                                <rect key="frame" x="67" y="0.0" width="51" height="31"/>
-                                                <accessibility key="accessibilityConfiguration" identifier="Male" label="Male"/>
-                                            </switch>
-                                        </subviews>
-                                    </stackView>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yji-9h-Vfi">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="Gender"/>
+                                    </pickerView>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ru6-fG-7SY">
-                                        <rect key="frame" x="0.0" y="41" width="116" height="34"/>
+                                        <rect key="frame" x="0.0" y="226" width="320" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Weight" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ead-uh-Pr9">
-                                        <rect key="frame" x="0.0" y="85" width="116" height="34"/>
+                                        <rect key="frame" x="0.0" y="270" width="320" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -79,11 +67,14 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="1vk-h2-99r" firstAttribute="centerX" secondItem="Hw8-wA-cts" secondAttribute="centerX" id="IZQ-dz-HII"/>
-                            <constraint firstItem="1vk-h2-99r" firstAttribute="centerY" secondItem="Hw8-wA-cts" secondAttribute="centerY" id="ngU-iy-Ls2"/>
+                            <constraint firstItem="1vk-h2-99r" firstAttribute="top" secondItem="Hw8-wA-cts" secondAttribute="top" constant="10" id="OUZ-xw-pvz"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Hw8-wA-cts"/>
                     </view>
                     <navigationItem key="navigationItem" id="UYb-TI-DTc"/>
+                    <connections>
+                        <outlet property="genderPicker" destination="Yji-9h-Vfi" id="5CQ-uK-pr0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iOS-6l-AYs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

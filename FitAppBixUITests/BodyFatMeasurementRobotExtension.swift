@@ -16,7 +16,7 @@ extension BodyFatMeasurementRobot {
     }
     
     func andIChooseMaleAsAGender() {
-        XCUIApplication().switches["Male"].tap()
+        XCUIApplication().pickerWheels["Gender"].adjust(toPickerWheelValue: "Male")
     }
     
     func andITypeFollowingAge(age: Int) {
