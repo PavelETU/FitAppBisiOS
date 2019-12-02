@@ -30,4 +30,10 @@ extension BodyFatMeasurementRobot {
         text.tap()
         text.typeText(String(weight))
     }
+    
+    func andITypeFollowingHeight(height: Double) {
+        let text = XCUIApplication().textFields["Height"]
+        text.tap()
+        text.typeText(String(height))
+    }
 }

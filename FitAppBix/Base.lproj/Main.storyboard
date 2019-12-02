@@ -47,7 +47,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1vk-h2-99r">
                                 <rect key="frame" x="47" y="54" width="320" height="304"/>
                                 <subviews>
-                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yji-9h-Vfi">
+                                    <pickerView contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yji-9h-Vfi">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
                                         <accessibility key="accessibilityConfiguration" identifier="Gender"/>
                                     </pickerView>

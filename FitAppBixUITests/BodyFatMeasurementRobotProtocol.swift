@@ -13,4 +13,5 @@ protocol BodyFatMeasurementRobot {
     func andIChooseMaleAsAGender()
     func andITypeFollowingAge(age: Int)
     func andITypeFollowingWeight(weight: Double)
+    func andITypeFollowingHeight(height: Double)
 }

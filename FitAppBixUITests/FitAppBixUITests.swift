@@ -18,5 +18,6 @@ class FitAppBixUITests: XCTestCase, BodyFatMeasurementRobot {
         andIChooseMaleAsAGender()
         andITypeFollowingAge(age: 26)
         andITypeFollowingWeight(weight: 80)
+        andITypeFollowingHeight(height: 183)
     }
 }
