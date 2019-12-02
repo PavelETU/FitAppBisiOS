@@ -38,6 +38,6 @@ extension BodyFatMeasurementRobot {
     }
     
     func iShouldSeeFollowingBodyFatPercentageByBMIMethod(bodyFatPercentage: Double) {
-        XCUIApplication().textViews[String(bodyFatPercentage)].isHittable
+        XCTAssertTrue(XCUIApplication().staticTexts[String(bodyFatPercentage)].exists)
     }
 }
