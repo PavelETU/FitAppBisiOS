@@ -11,6 +11,7 @@ import Foundation
 protocol BodyFatMeasurementRobot {
     func givenIAmOnBodyFatMeasurementScreen()
     func andIChooseMaleAsAGender()
+    func andIChooseFemaleAsAGender()
     func andITypeFollowingAge(age: Int)
     func andITypeFollowingWeight(weight: Double)
     func andITypeFollowingHeight(height: Double)

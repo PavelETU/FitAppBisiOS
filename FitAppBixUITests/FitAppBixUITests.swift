@@ -13,12 +13,21 @@ class FitAppBixUITests: XCTestCase, BodyFatMeasurementRobot {
         continueAfterFailure = false
     }
 
-    func testCase() {
+    func test26YOMaleWith80WightAnd183HeightWouldGet18BodyFatPercentageByBMI() {
         givenIAmOnBodyFatMeasurementScreen()
         andIChooseMaleAsAGender()
         andITypeFollowingAge(age: 26)
         andITypeFollowingWeight(weight: 80)
         andITypeFollowingHeight(height: 183)
         iShouldSeeFollowingBodyFatPercentageByBMIMethod(bodyFatPercentage: 18.4)
+    }
+    
+    func test26YOFemaleWith80WightAnd183HeightWouldGet29BodyFatPercentageByBMI() {
+        givenIAmOnBodyFatMeasurementScreen()
+        andIChooseFemaleAsAGender()
+        andITypeFollowingAge(age: 26)
+        andITypeFollowingWeight(weight: 80)
+        andITypeFollowingHeight(height: 183)
+        iShouldSeeFollowingBodyFatPercentageByBMIMethod(bodyFatPercentage: 29.2)
     }
 }
