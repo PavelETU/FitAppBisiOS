@@ -36,4 +36,8 @@ extension BodyFatMeasurementRobot {
         text.tap()
         text.typeText(String(height))
     }
+    
+    func iShouldSeeFollowingBodyFatPercentageByBMIMethod(bodyFatPercentage: Double) {
+        XCUIApplication().textViews[String(bodyFatPercentage)].isHittable
+    }
 }

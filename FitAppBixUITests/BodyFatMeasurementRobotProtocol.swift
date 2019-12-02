@@ -14,4 +14,5 @@ protocol BodyFatMeasurementRobot {
     func andITypeFollowingAge(age: Int)
     func andITypeFollowingWeight(weight: Double)
     func andITypeFollowingHeight(height: Double)
+    func iShouldSeeFollowingBodyFatPercentageByBMIMethod(bodyFatPercentage: Double)
 }

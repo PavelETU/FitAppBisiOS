@@ -19,5 +19,6 @@ class FitAppBixUITests: XCTestCase, BodyFatMeasurementRobot {
         andITypeFollowingAge(age: 26)
         andITypeFollowingWeight(weight: 80)
         andITypeFollowingHeight(height: 183)
+        iShouldSeeFollowingBodyFatPercentageByBMIMethod(bodyFatPercentage: 18.4)
     }
 }
