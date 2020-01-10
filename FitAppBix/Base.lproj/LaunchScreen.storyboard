@@ -15,7 +15,17 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Running man" translatesAutoresizingMaskIntoConstraints="NO" id="pYu-Q9-HBB">
+                                <rect key="frame" x="0.0" y="197" width="414" height="512"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="leading" secondItem="pYu-Q9-HBB" secondAttribute="leading" id="JWF-1c-7fo"/>
+                            <constraint firstItem="pYu-Q9-HBB" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="aIr-OA-u94"/>
+                            <constraint firstItem="pYu-Q9-HBB" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ddD-kD-4e9"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -24,4 +34,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Running man" width="512" height="512"/>
+    </resources>
 </document>
