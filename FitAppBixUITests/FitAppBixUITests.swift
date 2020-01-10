@@ -9,9 +9,6 @@
 import XCTest
 
 class FitAppBixUITests: XCTestCase, BodyFatMeasurementRobot {
-    override func setUp() {
-        continueAfterFailure = false
-    }
 
     func test26YOMaleWith80WightAnd183HeightWouldGet18BodyFatPercentageByBMI() {
         givenIAmOnBodyFatMeasurementScreen()
@@ -30,4 +27,5 @@ class FitAppBixUITests: XCTestCase, BodyFatMeasurementRobot {
         andITypeFollowingHeight(height: 183)
         iShouldSeeFollowingBodyFatPercentageByBMIMethod(bodyFatPercentage: 29.2)
     }
+    
 }

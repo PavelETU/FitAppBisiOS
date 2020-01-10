@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0A22DC2C238C8FAC00D2E96F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A22DC2B238C8FAC00D2E96F /* AppDelegate.swift */; };
-		0A22DC2E238C8FAC00D2E96F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A22DC2D238C8FAC00D2E96F /* SceneDelegate.swift */; };
 		0A22DC30238C8FAC00D2E96F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A22DC2F238C8FAC00D2E96F /* BaseViewController.swift */; };
 		0A22DC33238C8FAC00D2E96F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A22DC31238C8FAC00D2E96F /* Main.storyboard */; };
 		0A22DC35238C8FAD00D2E96F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A22DC34238C8FAD00D2E96F /* Assets.xcassets */; };
@@ -40,7 +39,6 @@
 /* Begin PBXFileReference section */
 		0A22DC28238C8FAC00D2E96F /* FitAppBix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitAppBix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A22DC2B238C8FAC00D2E96F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0A22DC2D238C8FAC00D2E96F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0A22DC2F238C8FAC00D2E96F /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		0A22DC32238C8FAC00D2E96F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0A22DC34238C8FAD00D2E96F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -106,7 +104,6 @@
 			isa = PBXGroup;
 			children = (
 				0A22DC2B238C8FAC00D2E96F /* AppDelegate.swift */,
-				0A22DC2D238C8FAC00D2E96F /* SceneDelegate.swift */,
 				0A22DC2F238C8FAC00D2E96F /* BaseViewController.swift */,
 				0A22DC31238C8FAC00D2E96F /* Main.storyboard */,
 				0A22DC34238C8FAD00D2E96F /* Assets.xcassets */,
@@ -270,7 +267,6 @@
 			files = (
 				0A22DC30238C8FAC00D2E96F /* BaseViewController.swift in Sources */,
 				0A22DC2C238C8FAC00D2E96F /* AppDelegate.swift in Sources */,
-				0A22DC2E238C8FAC00D2E96F /* SceneDelegate.swift in Sources */,
 				0A22DC60238CAB9100D2E96F /* BodyFatMeasurementsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,6 +444,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FitAppBix/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -465,6 +462,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FitAppBix/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -483,7 +481,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FitAppBixTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -504,7 +502,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FitAppBixTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -524,6 +522,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FitAppBixUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -543,6 +542,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FitAppBixUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
