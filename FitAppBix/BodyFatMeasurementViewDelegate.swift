@@ -10,4 +10,5 @@ import Foundation
 
 protocol BodyFatMeasurementViewDelegate: NSObjectProtocol {
     func dispalyBodyFatMeasurement(bodyFatMeasurement: String)
+    func promptUserToEnterMissingValues(message: String)
 }

@@ -43,6 +43,12 @@ class BodyFatMeasurementsViewController: UIViewController, UIPickerViewDelegate,
         bodyFatMeasurementLabel.text = bodyFatMeasurement
     }
     
+    func promptUserToEnterMissingValues(message: String) {
+        let alert = UIAlertController.init(title: "Please add missing values", message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler:  nil))
+        present(alert, animated: true, completion: nil)
+    }
+    
     @IBAction func calculateClick(_ sender: Any) {
         presenter.calculateBFPByBMI(gender: gender[genderPicker.selectedRow(inComponent: 0)], age: age.text ?? "", weight: weight.text ?? "", height: height.text ?? "")
     }
