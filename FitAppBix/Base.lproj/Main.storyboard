@@ -46,7 +46,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1vk-h2-99r">
-                                <rect key="frame" x="47" y="54" width="320" height="418.5"/>
+                                <rect key="frame" x="47" y="54" width="320" height="448"/>
                                 <subviews>
                                     <pickerView clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yji-9h-Vfi">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="216"/>
@@ -70,9 +70,12 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8QO-ko-yq8">
                                         <rect key="frame" x="0.0" y="358" width="320" height="30"/>
                                         <state key="normal" title="Calculate"/>
+                                        <connections>
+                                            <action selector="calculateClick:" destination="mgQ-7P-zcB" eventType="touchUpInside" id="GYZ-8c-OeE"/>
+                                        </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18.4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lvq-Av-8qL">
-                                        <rect key="frame" x="0.0" y="398" width="320" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lvq-Av-8qL">
+                                        <rect key="frame" x="0.0" y="398" width="320" height="50"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -89,7 +92,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="UYb-TI-DTc"/>
                     <connections>
+                        <outlet property="age" destination="Ru6-fG-7SY" id="Xki-es-era"/>
+                        <outlet property="bodyFatMeasurementLabel" destination="Lvq-Av-8qL" id="iCJ-Ol-wAu"/>
                         <outlet property="genderPicker" destination="Yji-9h-Vfi" id="5CQ-uK-pr0"/>
+                        <outlet property="height" destination="lIQ-gW-rks" id="Gp4-yb-XrX"/>
+                        <outlet property="weight" destination="ead-uh-Pr9" id="mRk-Rh-QTO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iOS-6l-AYs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

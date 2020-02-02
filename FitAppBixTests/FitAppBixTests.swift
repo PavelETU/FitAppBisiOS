@@ -10,25 +10,35 @@ import XCTest
 @testable import FitAppBix
 
 class FitAppBixTests: XCTestCase {
+    
+    private var presenter: BodyFatMeasurementPresenter!
+    private var viewDelegateMock: ViewDelegateMock!
 
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        viewDelegateMock = ViewDelegateMock()
+        presenter = BodyFatMeasurementPresenterBase()
+        presenter.setViewDelegate(bodyFatMeasurementViewDelegate: viewDelegateMock)
     }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    func testSomething1() {
+        presenter.calculateBFPByBMI(gender: "Male", age: "26", weight: "80", height: "183")
+        
+        XCTAssertTrue(viewDelegateMock.textDisplayed == "18.4")
     }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    func testSomething() {
+        presenter.calculateBFPByBMI(gender: "Female", age: "26", weight: "80", height: "183")
+        
+        XCTAssertTrue(viewDelegateMock.textDisplayed == "29.2")
     }
+    
 
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+}
+
+class ViewDelegateMock: NSObject, BodyFatMeasurementViewDelegate {
+    var textDisplayed: String = ""
+    func dispalyBodyFatMeasurement(bodyFatMeasurement: String) {
+        textDisplayed = bodyFatMeasurement
     }
-
+    
 }
