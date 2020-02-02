@@ -41,6 +41,10 @@ extension BodyFatMeasurementRobot {
         text.typeText(String(height))
     }
     
+    func andIClickOnCalculateBtn() {
+        XCUIApplication().buttons["Calculate"].tap()
+    }
+    
     func iShouldSeeFollowingBodyFatPercentageByBMIMethod(bodyFatPercentage: Double) {
         XCTAssertTrue(XCUIApplication().staticTexts[String(bodyFatPercentage)].exists)
     }
